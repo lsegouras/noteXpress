@@ -1,0 +1,39 @@
+# Arquivos e diretórios do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Diretórios de ambiente virtual
+venv/
+.env/
+
+# Arquivos de configuração de IDE/editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# Arquivos de compilação e pacotes
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.log
+
+# Arquivos e diretórios específicos de Django
+*.pot
+*.mo
+staticfiles/
+media/
+
+# Arquivos e diretórios específicos de React
+node_modules/
+build/
+*.log
+
+# Arquivos de configuração de segurança
+.env
+
