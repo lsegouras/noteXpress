@@ -4,6 +4,7 @@ Thumbs.db
 
 # Diretórios de ambiente virtual
 venv/
+env/
 .env/
 
 # Arquivos de configuração de IDE/editor
