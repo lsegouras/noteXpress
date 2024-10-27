@@ -3,6 +3,12 @@ div {
   font-family: Arial, sans-serif;
 }
 
+div #createNoteHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Styles for the notes section */
 .notes-section {
   margin-bottom: 2rem;
