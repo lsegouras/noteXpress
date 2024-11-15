@@ -46,12 +46,31 @@ function Home() {
       .catch((err) => alert(err))
   }
 
+  const updateNote = (id, newTitle, newContent) => {
+    api
+      .put(`/api/notes/update/${id}/`, { title: newTitle, content: newContent })
+      .then((res) => {
+        if (res.status === 200) {
+          alert('Note updated!')
+          getNotes()
+        } else {
+          alert('Failed to update note.')
+        }
+      })
+      .catch((err) => alert(err))
+  }
+
   return (
     <div>
       <div>
         <h2>Notas</h2>
         {notes.map((note) => (
-          <Note note={note} onDelete={deleteNote} key={note.id} />
+          <Note
+            note={note}
+            onDelete={deleteNote}
+            onUpdate={updateNote}
+            key={note.id}
+          />
         ))}
       </div>
       <h2 id="createNoteHeader">Criar Nota</h2>
