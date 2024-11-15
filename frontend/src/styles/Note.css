@@ -18,7 +18,14 @@
   font-size: 0.8rem;
 }
 
-.delete-button {
+.note-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.note-buttons .delete-button {
   background-color: #f44336;
   color: white;
   border: none;
@@ -30,4 +37,18 @@
 
 .delete-button:hover {
   background-color: #d32f2f;
+}
+
+.note-buttons .edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #0265cf;
 }
